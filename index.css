@@ -1,0 +1,569 @@
+body {
+  background: linear-gradient(to top, blue, white);
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+html {
+  scroll-snap-type: y mandatory;
+}
+.header {
+  background-color: ghostwhite;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.header h1 {
+  margin: 3px 0 0 10px;
+  float: left;
+  color: goldenrod;
+  text-transform: uppercase;
+}
+.gate {
+  float: right;
+  cursor: pointer;
+  transition: 0.5s linear;
+}
+.gate:hover {
+  transform: rotate(180deg);
+}
+
+.head-links {
+  float: right;
+  margin-right: 15%;
+  padding-top: 7px;
+}
+.links {
+  margin-left: 20px;
+  text-decoration: none;
+  color: goldenrod;
+  font-weight: bolder;
+  transition: 0.5s;
+}
+.links:hover {
+  color: gold;
+}
+.heads {
+  display: none;
+}
+.head-links-s {
+  position: fixed;
+
+  background: transparent;
+  backdrop-filter: blur(9px);
+  width: 100%;
+  height: 100%;
+}
+.links-s {
+  width: 0;
+  font-size: 30px;
+  text-decoration: none;
+  color: rgb(80, 71, 21);
+  font-weight: bolder;
+  display: grid;
+  margin: 0 auto;
+  transition: 0.5s;
+  position: relative;
+  margin-left: 40%;
+  top: 30%;
+  margin-bottom: 20px;
+}
+.links-s:hover {
+  color: gold;
+}
+.exit {
+  color: goldenrod;
+  font-weight: bolder;
+  font-size: 50px;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  transition: 0.5s linear;
+}
+.exit:hover {
+  color: rgb(94, 87, 51);
+  transform: rotate(360deg);
+}
+section {
+  scroll-snap-align: center;
+  width: 100%;
+  height: 610px;
+  background-color: aquamarine;
+  margin: 20px 0 20px 0;
+}
+.intro {
+  float: left;
+  width: 50%;
+  height: 100%;
+  background-color: whitesmoke;
+}
+.intro1 {
+  float: left;
+  width: 50%;
+  height: 100%;
+  background-image: url(/assets/img/bg-img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.dib {
+  position: relative;
+  top: 35%;
+}
+.dib h1 {
+  
+  color: rgb(233, 198, 2);
+  font-size: 40px;
+  text-align: center;
+}
+.dib p {
+  
+  color: rgb(80, 71, 21);
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.dib button {
+  padding: 10% 13%;
+  border: solid 2px rgb(80, 71, 21);
+  font-weight: bolder;
+}
+#hi {
+  background-color: black;
+  color: white;
+  margin-right: 0px;
+}
+#ex {
+  background-color: white;
+  color: black;
+}
+.buttons {
+  width: 53.9%;
+  background-position: center;
+  display: grid;
+  margin: 0 auto;
+  gap: 10px;
+}
+.but1 {
+}
+.buttons:hover #hi:not(:hover) {
+  background-color: white;
+  color: black;
+}
+
+.about-sec {
+  padding-top: 20px;
+  background-color: whitesmoke;
+}
+.about {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.about h1 {
+  text-align: center;
+  color: rgb(233, 198, 2);
+  font-weight: bolder;
+  font-size: 40px;
+  text-decoration: overline underline;
+}
+.about p {
+  text-align: center;
+  width: 70%;
+  display: grid;
+  margin: 0 auto;
+}
+.about-sec button {
+  display: grid;
+  margin: 0 auto;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  background-color: white;
+  font-weight: bolder;
+  border: solid 2px rgb(80, 71, 21);
+}
+.about-sec button:hover{
+  background-color: black;
+  color: ghostwhite;
+}
+.skill {
+  margin-top: 100px;
+}
+.skill-set {
+  display: grid;
+  grid-column: auto;
+  gap: 10px;
+}
+.skill h1 {
+  text-align: center;
+}
+.skill-info {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: center;
+  width: 100%;
+}
+.skill-info span {
+  display: grid;
+  margin: 0 auto;
+  width: 90%;
+}
+.skill-info input[type="range"] {
+  width: 98%;
+  height: 40px;
+}
+.service-sec {
+  display: grid;
+  margin: 0 auto;
+  text-align: center;
+
+  background-image: url(/assets/img/bg-img2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  backdrop-filter: blur(40px);
+}
+.service-sec h1 {
+  margin-bottom: 9px;
+  text-align: center;
+  color: rgb(233, 198, 2);
+  font-weight: bolder;
+  font-size: 40px;
+  text-decoration: overline underline;
+  
+}
+.head-serv {
+  width: 33%;
+  margin: 9px;
+  margin-top: 20px;
+}
+.head-serv img {
+  width: 96%;
+  display: grid;
+  margin: 0 auto;
+}
+.head-serv h4 {
+  text-align: center;
+}
+.head-serv p {
+  text-align: center;
+}
+.hold {
+  display: flex;
+}
+.services {
+  background-color: whitesmoke;
+  width: 95%;
+  display: grid;
+  margin: 0 auto;
+}
+.serv-sec {
+  background: rgba(255, 255, 255, 0.342);
+  backdrop-filter: blur(2px);
+  height: 190%;
+  background-attachment: fixed;
+  margin: 0;
+  padding-top: 30px;
+}
+.my-creations {
+  padding-top: 90px;
+  background-color: ghostwhite;
+}
+.my-creations .h1 {
+  margin-bottom: 39px;
+  text-align: center;
+  color: rgb(233, 198, 2);
+  font-weight: bolder;
+  font-size: 40px;
+  text-decoration: overline underline;
+}
+.card-group{
+    display: flex;
+    gap: 25px;
+}
+.card{
+    width: 255;
+    height: 400px;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    transition: .5s;
+    border: 2px solid burlywood;
+
+}
+.card .layer{
+   background:  linear-gradient(to top, rgba(0,0,0,1),rgba(0,0,0,0));
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: 75%;
+   opacity: 0;
+   transition: 0.3s;
+}
+.card .info{
+    position: absolute;
+    bottom: -100%;
+    padding: 15px;
+    opacity: 1;
+    transition: 0.5s bottom, 1.75s opacity;
+}
+.info p{
+    font-size: 14px;
+    margin-top: 3px;
+    font-weight: bolder;
+    color: ghostwhite;
+    text-align: center;
+}
+.info h1{
+text-align: center;
+    font-weight: bolder;
+    color: rgb(233, 198, 2);
+}
+.info a{
+    background: #ff0800;
+    border: none;
+    padding: 8px 12px;
+    font-weight: bolder;
+    color: ghostwhite;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+   display: grid;
+   margin: 0 auto;
+   transition: ease-in-out 1s;
+}
+.info a:hover{
+    background: #ffffff;
+    color: rgb(255, 0, 0);
+}
+
+.card:hover,
+.card:hover img,
+.card:hover .layer{
+    transform: scale(1.1);
+}
+.card:hover .layer{
+    opacity: 1;
+}
+.card:hover .info{
+    bottom: 0;
+    opacity: 1;
+
+}
+.card-group:hover .card:not(:hover){
+    filter: blur(5px);
+}
+/*
+
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    background-color: blue;
+    transition: ease-in-out 1s;
+}
+.card{
+background-color: chartreuse;
+ overflow: hidden;
+    display: grid;
+    margin: 0 auto;
+    padding: 0px;
+    transition: ease-in-out 1s;
+}
+.work-img{
+    width: 70%;
+    overflow: hidden;
+}
+.work-info{
+    position: absolute;
+    bottom: -220%;
+}
+.card:hover .work-info{
+    position: absolute;
+    bottom: -220%;
+}
+    */
+  .mini-sec{
+height: 305px;
+  }
+  .con-form{
+     backdrop-filter: blur(10px);
+     padding-top: 25px;
+  }
+
+    .contact-sec{
+      backdrop-filter: blur(4px);
+      padding-top: px;
+      background-image: url(/assets/img/bg-img.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      
+    }
+    .contact-sec h1 {
+      margin-top: 30px;
+  margin-bottom: 39px;
+  text-align: center;
+  color: rgb(233, 198, 2);
+  font-weight: bolder;
+  font-size: 40px;
+  text-decoration: overline underline;
+}
+    .contact-sec input[type="email"],input[type="text"], textarea{
+      width: 90%;
+      display: grid;
+      margin: 40px auto;
+      border: none;
+      border-bottom: 2px solid red;
+      outline: none;
+      padding: 0px;
+      padding-top: 5px;
+      padding-left: 5px;
+      font-size: x-large;
+      background: transparent;
+      border-radius: 15px;
+      background: #ffffff38;
+      box-shadow: 05px 5px 5px rgba(0, 0, 0, 0.438);
+    }
+textarea{
+  height: 200PX;
+  
+  
+}
+
+.contact-sec input::placeholder{
+  margin-top: 20px;
+}
+.contact-sec input[type="submit"]{
+  display: grid;
+  margin: 0 auto;
+  background-color: rgb(233, 198, 2);
+  border: none;
+  padding: 20px 40px;
+  font-weight: bolder;
+  color: ghostwhite;
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+.mini-sec {
+    
+    color: #fff; /* Text color */
+
+
+  background: url(/assets/img/bg-img3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: -20px;
+    background-color: #0000009d;
+    height: 100%;
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+}
+
+.stat {
+    text-align: center;
+    margin: 0 30px;
+
+}
+
+.stat h2 {
+    font-size: 48px;
+}
+
+
+
+
+/*Media Queries*/
+@media (max-width: 710px) {
+  .links {
+    display: none;
+  }
+}
+@media (min-width: 710px) {
+  .gate {
+    display: none;
+  }
+}
+
+
+@media (max-width: 500px) {
+
+
+.dib h1 {
+  margin-left: 20px;
+  color: rgb(233, 198, 2);
+  font-size: 25px;
+  text-align: center;
+}
+.dib p {
+  margin-left: 40px;
+  color: rgb(80, 71, 21);
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+
+
+.head-links-s {
+  position: fixed;
+  background: transparent;
+  backdrop-filter: blur(9px);
+  width: 100%;
+  height: 100%;
+}
+.links-s {
+  width: 0;
+  font-size: 25px;
+  text-decoration: none;
+  color: rgb(80, 71, 21);
+  font-weight: bolder;
+  display: grid;
+  margin: 0 auto;
+  transition: 0.5s;
+  position: relative;
+  margin-left: 40%;
+  top: 20%;
+  margin-bottom: 20px;
+}
+.links-s:hover {
+  color: gold;
+}
+.exit {
+  color: goldenrod;
+  font-weight: bolder;
+  font-size: 35px;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  transition: 0.5s linear;
+}
+.exit:hover {
+  color: rgb(94, 87, 51);
+  transform: rotate(360deg);
+}
+}
